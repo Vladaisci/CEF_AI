@@ -38,7 +38,7 @@ where $`G_i`$ gates expert activation. MoE reduces latency by 3× due to paralle
 
 ### 2.2 Context Cloud  
 A dynamic knowledge graph storing:  
-- Dialogue history with success metrics (\( R \in [0, 1] \)),  
+- Dialogue history with success metrics $`( R \in [0, 1] )`$,  
 - Semantic topic linkages (e.g., "quantum physics → Schrödinger's cat"),  
 - Self-learned patterns via KL-divergence:  
 $`\Delta S = \beta \cdot \text{KL}(p_{\text{new}} \| p_{\text{old}}) > 0.5`$
@@ -208,7 +208,7 @@ class EthicsLLM(nn.Module):
 ### Appendix D: Semantic Drift Constraints Derivation  
 
 **Theorem 2** (Drift Bound):  
-For contrastive learning with discount factor \( \gamma = 0.9 \), semantic drift is bounded by \( \|v_t - v_{t-1}\|_2 \leq 0.2 \).  
+For contrastive learning with discount factor $` \gamma = 0.9 `$, semantic drift is bounded by $` \|v_t - v_{t-1}\|_2 \leq 0.2 `$.  
 
 **Derivation**:  
 1. Context vector update rule:  
@@ -227,5 +227,5 @@ For contrastive learning with discount factor \( \gamma = 0.9 \), semantic drift
 
 ---
 
-### Warnings 
+Warnings 
 *The entire mathematical part of the article created by deedseek-R1. The author only expressed his main concept.
